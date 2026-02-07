@@ -4,7 +4,7 @@ Serves dynamic HTML tags for social media previews.
 """
 
 from fastapi import APIRouter, Request, UploadFile, File, HTTPException
-from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.responses import HTMLResponse
 from pydantic import BaseModel
 import logging
 

@@ -3,7 +3,7 @@ BananaClock API - Main FastAPI Application
 Analyzes banana images to predict ripeness and days until spoilage.
 """
 
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address

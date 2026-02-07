@@ -23,7 +23,7 @@ def get_supabase_client():
     if _supabase_client is None:
         if settings.supabase_url and settings.supabase_key:
             try:
-                from supabase import create_client, Client
+                from supabase import create_client
                 _supabase_client = create_client(settings.supabase_url, settings.supabase_key)
                 logger.info("Supabase client initialized")
             except Exception as e:

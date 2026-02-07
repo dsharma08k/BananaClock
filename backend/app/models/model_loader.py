@@ -2,7 +2,6 @@
 Model Loader - Singleton pattern for loading and caching ML models.
 """
 
-from pathlib import Path
 from functools import lru_cache
 import logging
 

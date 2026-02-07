@@ -5,7 +5,7 @@ Handles banana image analysis and ripeness prediction.
 
 from fastapi import APIRouter, UploadFile, File, HTTPException, Request
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List
 import logging
 
 from slowapi import Limiter

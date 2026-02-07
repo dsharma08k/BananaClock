@@ -39,7 +39,7 @@ async def upload_image(image_bytes: bytes, filename: str = None, bucket_name: st
             filename = f"{uuid.uuid4()}.jpg"
         
         # Upload to Supabase Storage
-        result = supabase.storage.from_(bucket_name).upload(
+        supabase.storage.from_(bucket_name).upload(
             path=filename,
             file=image_bytes,
             file_options={"content-type": "image/jpeg"}
