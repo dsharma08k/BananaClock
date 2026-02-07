@@ -7,7 +7,7 @@ Thank you for your interest in contributing to BananaClock! 🍌
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/BananaClock.git
+   git clone https://github.com/dsharma08k/BananaClock.git
    cd BananaClock
    ```
 3. **Set up the development environment**:
