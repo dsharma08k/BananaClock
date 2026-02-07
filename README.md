@@ -1,17 +1,17 @@
-# 🍌 BananaClock
+# BananaClock
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://banana-clock-frontend.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-blue?style=for-the-badge&logo=github)](https://github.com/dsharma08k/BananaClock)
 
 BananaClock is an intelligent web application that uses computer vision (YOLOv8 + ResNet50) to detect bananas, classify their ripeness, and predict exactly how many days they have left before spoiling.
 
-## 🚀 Live Demo
+## Live Demo
 
 **Frontend:** [https://banana-clock-frontend.vercel.app/](https://banana-clock-frontend.vercel.app/)
 
 **Backend API:** [https://dsharma08k-bananaclockbackend.hf.space](https://dsharma08k-bananaclockbackend.hf.space)
 
-## ✨ Features
+## Features
 
 - **AI Precision**: Instantly detects and classifies bananas into 5 ripeness stages (Fresh -> Spoiled).
 - **Shelf Life Prediction**: Accurate countdowns for "Days Until Bad" based on current ripeness.
@@ -21,7 +21,7 @@ BananaClock is an intelligent web application that uses computer vision (YOLOv8 
 - **PWA Ready**: Installable on mobile devices with a native app-like experience.
 - **Social Sharing**: Generate beautiful, shareable cards of your banana stats for social media.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Framework**: React (Vite)
@@ -37,7 +37,7 @@ BananaClock is an intelligent web application that uses computer vision (YOLOv8 
 - **Storage**: Supabase (Images & feedback data)
 - **Containerization**: Docker
 
-## 🏁 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js (v18+)
@@ -76,7 +76,7 @@ npm run dev
 ```
 The frontend will start at `http://localhost:5173`.
 
-## 🌐 Deployment
+## Deployment
 
 ### Backend (Hugging Face Spaces)
 1. Ensure your `Dockerfile` is in the `backend` root.
@@ -93,8 +93,8 @@ The frontend will start at `http://localhost:5173`.
 4. Add environment variables:
    - `VITE_API_URL`: The URL of your deployed backend.
 
-## 🤝 Contributing
+## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## License
 This project is open-source and available under the terms of the MIT License.
