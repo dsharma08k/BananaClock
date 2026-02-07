@@ -69,14 +69,14 @@ async def share_preview(
     Redirects to the main app after loading.
     """
     # Use default image if none provided or if it's "undefined"
-    default_img = "https://your-frontend-url.vercel.app/logo.png"
+    default_img = "https://banana-clock-frontend.vercel.app/logo.png"
     image_url = img if img and img != "undefined" else default_img
     
     # Ensure title/desc are safe (basic check)
     safe_title = title[:100]
     safe_desc = desc[:200]
     
-    target_url = "https://your-frontend-url.vercel.app"
+    target_url = "https://banana-clock-frontend.vercel.app"
     
     html_content = f"""
     <!DOCTYPE html>

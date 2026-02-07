@@ -200,7 +200,7 @@ const ShareCard = ({ isOpen, onClose, result, activeCondition }) => {
                                 </div>
                             </div>
 
-                            <p className="mt-6 text-xs font-medium opacity-80 font-mono tracking-wide">banana-clock-seven.vercel.app</p>
+                            <p className="mt-6 text-xs font-medium opacity-80 font-mono tracking-wide">banana-clock-frontend.vercel.app</p>
                         </div>
                     </div>
                 </div>
