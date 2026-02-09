@@ -444,7 +444,7 @@ curl -X POST "http://localhost:8000/analyze" \
 - `422`: No bananas detected in image
 - `500`: Model inference error
 
-Full API documentation: https://dsharma08k-bananaclockbackend.hf.space/docs
+Full API documentation: https://dsharma08k-banana-clock-backend.hf.space/docs
 
 ---
 
@@ -530,7 +530,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **YOLOv8:** Ultralytics team for the incredible object detection framework
 - **ResNet:** He et al. for the ResNet architecture paper
-- **Dataset:** Custom dataset created using Roboflow + manual annotation
+- **Datasets:**
+  - [Banana Ripeness Classification Dataset](https://www.kaggle.com/datasets/shahriar26s/banana-ripeness-classification-dataset) - Kaggle
+  - [Banana Ripeness Dataset](https://data.mendeley.com/datasets/bdd69gyhv8/1) - Mendeley Data
+  - [Banana Ripening Process](https://universe.roboflow.com/fruit-ripening/banana-ripening-process/dataset/2) - Roboflow Universe
 - **Inspiration:** The global food waste problem (1.3 billion tons/year)
 
 ---
@@ -545,11 +548,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **If this project helped reduce food waste in your kitchen, please star it on GitHub!**
-
----
-
-## Blog Posts & Media
-
-- [Medium Article] Building BananaClock: Combining YOLOv8 and ResNet50 *(coming soon)*
-- [YouTube Demo] Full walkthrough of the application *(coming soon)*
-- [Twitter Thread] Technical deep-dive into the ML pipeline *(coming soon)*
