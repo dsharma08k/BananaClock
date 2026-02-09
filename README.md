@@ -1,7 +1,6 @@
 # BananaClock - AI-Powered Banana Ripeness Tracker
 
-<!-- Add banner image here when ready -->
-<!-- ![Banner](assets/banner.png) -->
+![BananaClock Banner](assets/banner.png)
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://banana-clock-frontend.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-blue?style=for-the-badge&logo=github)](https://github.com/dsharma08k/BananaClock)
