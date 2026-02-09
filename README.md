@@ -14,12 +14,10 @@ Upload a photo of your bananas and get instant AI-powered analysis: ripeness cla
 ## Live Demo
 
 **Frontend:** https://banana-clock-frontend.vercel.app/  
-**Backend API:** https://dsharma08k-bananaclockbackend.hf.space  
-**API Docs:** https://dsharma08k-bananaclockbackend.hf.space/docs
+**Backend API:** https://dsharma08k-banana-clock-backend.hf.space  
+**API Docs:** https://dsharma08k-banana-clock-backend.hf.space/docs
 
-<!-- Add demo GIF here when ready -->
-<!-- ![Demo](assets/demo.gif) -->
-![Demo](assets/screenshot-analysis.png)
+![Demo](assets/demo.gif)
 *Complete workflow: Upload → Detection → Classification → Results*
 
 ---
@@ -522,9 +520,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Divyanshu Sharma**
 - GitHub: [@dsharma08k](https://github.com/dsharma08k)
-- LinkedIn: [Divyanshu Sharma](https://linkedin.com/in/your-profile)
-- Peerlist: [dsharma08k](https://peerlist.io/dsharma08k)
-- Email: your.email@example.com
+- LinkedIn: [@dsharma08k](https://www.linkedin.com/in/dsharma08k/)
+- Peerlist: [@dsharma08k](https://peerlist.io/dsharma08k)
+- Email: dsharma08k@gmail.com
 
 ---
 
