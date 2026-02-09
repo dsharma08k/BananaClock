@@ -44,7 +44,7 @@ app.include_router(feedback.router, tags=["Feedback"])
 app.include_router(share.router, tags=["Share"])
 
 
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 async def root():
     """Health check endpoint."""
     return {
@@ -54,7 +54,7 @@ async def root():
     }
 
 
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD"])
 async def health_check():
     """Detailed health check endpoint."""
     return {
