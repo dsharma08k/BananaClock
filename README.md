@@ -46,47 +46,29 @@ Upload a photo of your bananas and get instant AI-powered analysis: ripeness cla
 ---
 
 ## Architecture
+
+```mermaid
+flowchart LR
+    User([User]) -->|Upload Image| Frontend[React Frontend]
+    Frontend -->|Display Results| User
+    Frontend -->|POST /predict| Backend[FastAPI Backend]
+    Backend -->|JSON Response| Frontend
+    Backend -->|Input Tensor| Detection[YOLOv8 Detection]
+    Detection -->|Banana Crops| Classification[ResNet50 Classifier]
+    Classification -->|Ripeness Labels| Backend
+    Backend -->|Store Feedback| Supabase[(Supabase)]
 ```
-┌─────────────┐
-│   User      │
-│  Uploads    │
-│   Image     │
-└──────┬──────┘
-       │
-       ▼
-┌─────────────────────────────────────────┐
-│        React Frontend (Vite)            │
-│  • Drag-and-drop upload                 │
-│  • Image preview & cropping             │
-│  • Interactive results display          │
-└──────┬──────────────────────────────────┘
-       │ HTTP POST /analyze
-       ▼
-┌─────────────────────────────────────────┐
-│       FastAPI Backend (Docker)          │
-│                                         │
-│  1. Validate image (type, size)        │
-│  2. Preprocess (resize, normalize)     │
-│     ├─► YOLOv8 Detection               │
-│     │   (finds banana locations)       │
-│     │                                   │
-│     └─► ResNet50 Classification        │
-│         (predicts ripeness per banana) │
-│                                         │
-│  3. Post-process:                       │
-│     • Calculate "Days Until Bad"       │
-│     • Generate storage tips            │
-│     • Suggest recipes (if overripe)    │
-│     • Create bounding boxes            │
-└──────┬──────────────────────────────────┘
-       │
-       ▼
-┌─────────────────────────────────────────┐
-│         Supabase Storage                │
-│  • Store analyzed images (optional)     │
-│  • Save user feedback for retraining    │
-└─────────────────────────────────────────┘
-```
+
+### Pipeline Details
+
+| Stage | Component | Function |
+|-------|-----------|----------|
+| 1. Upload | React Frontend | Drag-and-drop, camera capture, image preview |
+| 2. Validation | FastAPI Backend | Check file type, size (max 10MB), format |
+| 3. Detection | YOLOv8 | Locate all bananas, generate bounding boxes |
+| 4. Classification | ResNet50 | Classify each banana into 5 ripeness stages |
+| 5. Post-processing | Backend | Calculate shelf-life, generate tips, recipes |
+| 6. Storage | Supabase | Save user feedback for model retraining |
 
 **Tech Stack:**
 - **Frontend:** React (Vite), Tailwind CSS, Framer Motion, Lucide Icons
